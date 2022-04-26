@@ -3,14 +3,12 @@ html{
     color: #585858;
     padding: 0px;
     margin: 0px;
-    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-seri;
+    
     box-sizing: border-box;
 } 
 body{
-    background-color: #fff;
-}
-.pricingplan{
-    background-color:  #f8f9fa;
+    background-color: #f8f9fa;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .heading{
     text-align: center;
@@ -19,7 +17,7 @@ body{
     margin-top: 75px;
 }
 .limited{
-    border: 2px solid #e8e8e8;
+    border: 3px solid #e8e8e8;
     width: 300px;
     height: 400px;
     margin-top: 85px;
@@ -30,6 +28,7 @@ body{
     -webkit-transition: .5s linear;
     transition: .5s linear;
     position: relative;
+    background-color: #fff;
 }
 .limited:hover{
     -webkit-transition: .3s linear;
@@ -74,14 +73,21 @@ hr{
 ul{
     
     list-style: none;
+    opacity: 0.9;
 }
 li{
+    
     margin: 15px;
     font-size: 18px;
     line-height: 28px;
     margin-left: -15px;
+}
+li::before{
     font-family: "FontAwesome";
-    opacity: 0.85;
+    content: "\f105";
+    font-size: small;
+    color:#0abf53;
+    margin-right: 5px;
 }
 .btn1{
 
@@ -95,7 +101,7 @@ li{
     cursor: pointer;
     border: none;
     background-color: rgba(170, 170, 170, 0.1);
-    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .btn1:hover{
     background-color: #0abf53;
@@ -114,30 +120,21 @@ li{
     -webkit-transition: .5s linear;
     transition: .5s linear;
     position: relative;
+    background-color: #fff;
 }
 .star{
     position: absolute;
-    left:20px ;
-    top: 20px;
+    left:9px ;
+    top: 9px;
 }
 .brilliant::before {
     border-style: solid;
     border-width: 64px 64px 0 0;
-    border-color: #0abf53;
+    border-color: #0abf53 #fff;
     position: absolute;
     left: 0;
     top: 0;
     content: "";
-}
-brilliant::after {
-    color: white;
-    position: absolute;
-    left: 9px;
-    top: 9px;
-    text-shadow: 0 0 2px white;
-    font-size: 1.2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
-    content: "star-solid.svg";
 }
 .brilliant:hover{
     -webkit-transition: .3s linear;
@@ -156,6 +153,7 @@ brilliant::after {
     background-color: rgb(31, 197, 31);
     cursor: pointer;
     border: none;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     
 }
 .trial{
@@ -176,7 +174,7 @@ brilliant::after {
 }
 /* Div 3*/
 .basic{
-    border: 2px solid #e8e8e8;
+    border: 3px solid #e8e8e8;
     width: 300px;
     height: 400px;
     margin-left: 30px;
@@ -187,6 +185,7 @@ brilliant::after {
     -webkit-transition: .5s linear;
     transition: .5s linear;
     position: relative;
+    background-color: #fff;
 }
 .basic:hover{
     -webkit-transition: .3s linear;
@@ -237,21 +236,25 @@ brilliant::after {
     float: right;
     position:fixed;
     z-index: 99999;
-    background-color: white;
-    border: 2px solid black;
+    background-color:#0D1326;
 
 }
 .navbar div{
     display: block;
-    color: #e6ebff;
     width: 90px;
     height: 40px;
-    text-decoration: none;
     line-height: 24px;
-    opacity: .6;
     margin-bottom: 20px;
     text-align: center;
 }
+.navbar a{
+    color:#e6ebff;
+    text-decoration: none;
+    opacity: .6;
+
+}
 .navbar a:hover{
+    color:#fff;
     opacity: 1;
+
 }
